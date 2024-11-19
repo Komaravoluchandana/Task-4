@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Parlor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Order Your Favorite Ice Cream</h1>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our ice cream parlor offers a variety of delicious flavors to satisfy your sweet cravings. We use fresh ingredients for the best taste experience.</p>
+    </section>
+
+
+    <section id="products" class="content-section">
+        <h2>Our Ice Creams</h2>
+        <div id="filters">
+            <label for="flavorFilter">Filter by flavor:</label>
+            <select id="flavorFilter">
+                <option value="all">All</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="mint">Mint</option>
+                <option value="cookie">Cookie</option>
+            </select>
+    
+            <label for="sortPrice">Sort by Price:</label>
+            <select id="sortPrice">
+                <option value="default">Default</option>
+                <option value="low-to-high">Low to High</option>
+                <option value="high-to-low">High to Low</option>
+            </select>
+    
+            <label for="sortRating">Sort by Rating:</label>
+            <select id="sortRating">
+                <option value="default">Default</option>
+                <option value="high-to-low">Highest to Lowest</option>
+                <option value="low-to-high">Lowest to Highest</option>
+
+            </select>
+        </div>
+        <div id="product-list"></div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Ice Cream Parlor Website</p>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>
